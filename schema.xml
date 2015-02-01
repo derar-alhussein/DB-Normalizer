@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema>
+
+<relation>
+        <name>R</name>
+        <attributes>
+            <column>A</column>
+            <column>B</column>
+            <column>C</column>
+            <column>D</column>
+            <column>E</column>
+
+        </attributes>
+        <dependencies>
+        <fd>
+            <lhs>
+                <attribute>A</attribute>
+                <attribute>B</attribute>
+            </lhs>
+            <rhs>
+                <attribute>C</attribute>
+                <attribute>D</attribute>
+            </rhs>
+        </fd>
+
+        <fd>
+            <lhs>
+                <attribute>C</attribute>
+            </lhs>
+            <rhs>
+                <attribute>A</attribute>
+                <attribute>D</attribute>
+                <attribute>E</attribute>
+            </rhs>
+        </fd>
+
+
+        <fd>
+        <lhs>
+            <attribute>B</attribute>
+        </lhs>
+            <rhs>
+                <attribute>D</attribute>
+                <attribute>E</attribute>
+            </rhs>
+        </fd>
+
+        <fd>
+        <lhs>
+            <attribute>D</attribute>
+        </lhs>
+            <rhs>
+                <attribute>E</attribute>
+            </rhs>
+        </fd>
+
+        </dependencies>
+		<keys>
+			<key>
+				<attribute>A</attribute>
+				<attribute>B</attribute>
+			</key>
+			<key>
+				<attribute>B</attribute>
+				<attribute>C</attribute>
+			</key>
+		</keys>
+    </relation>
+
+    <relation>
+        <name>R1</name>
+        <attributes>
+            <column>A</column>
+            <column>B</column>
+            <column>C</column>
+            <column>D</column>
+            <column>E</column>
+
+        </attributes>
+        <dependencies>
+        <fd>
+            <lhs>
+                <attribute>A</attribute>
+                <attribute>B</attribute>
+            </lhs>
+            <rhs>
+                <attribute>C</attribute>
+                <attribute>D</attribute>
+            </rhs>
+        </fd>
+
+        <fd>
+            <lhs>
+                <attribute>C</attribute>
+            </lhs>
+            <rhs>
+                <attribute>A</attribute>
+                <attribute>D</attribute>
+                <attribute>E</attribute>
+            </rhs>
+        </fd>
+
+
+        <fd>
+        <lhs>
+            <attribute>B</attribute>
+        </lhs>
+            <rhs>
+                <attribute>D</attribute>
+                <attribute>E</attribute>
+            </rhs>
+        </fd>
+
+        <fd>
+        <lhs>
+            <attribute>D</attribute>
+        </lhs>
+            <rhs>
+                <attribute>E</attribute>
+            </rhs>
+        </fd>
+
+        </dependencies>
+    </relation>
+
+    <relation>
+        <name>R2</name>
+        <attributes>
+            <column>A</column>
+            <column>B</column>
+            <column>C</column>
+            <column>D</column>
+            <column>E</column>
+
+        </attributes>
+        <dependencies>
+        <fd>
+            <lhs>
+                <attribute>A</attribute>
+                <attribute>B</attribute>
+            </lhs>
+            <rhs>
+                <attribute>C</attribute>
+                <attribute>D</attribute>
+            </rhs>
+        </fd>
+
+        <fd>
+            <lhs>
+                <attribute>A</attribute>
+                <attribute>B</attribute>
+                <attribute>E</attribute>
+            </lhs>
+            <rhs>
+                <attribute>C</attribute>
+            </rhs>
+        </fd>
+
+
+
+
+        <fd>
+        <lhs>
+            <attribute>D</attribute>
+        </lhs>
+            <rhs>
+                <attribute>E</attribute>
+            </rhs>
+        </fd>
+
+        </dependencies>
+    </relation>
+
+    <relation>
+        <name>R3</name>
+        <attributes>
+            <column>A</column>
+            <column>B</column>
+        </attributes>
+        <dependencies>
+            <fd>
+                <lhs>
+                    <attribute>C</attribute>
+                </lhs>
+                <rhs>
+                    <attribute>A</attribute>
+                </rhs>
+            </fd>
+	    </dependencies>
+    </relation>
+
+    <relation>
+        <name>R4</name>
+        <attributes>
+            <column>A</column>
+            <column>B</column>
+            <column>C</column>
+            <column>D</column>
+            <column>E</column>
+
+        </attributes>
+        <dependencies>
+        <fd>
+            <lhs>
+                <attribute>A</attribute>
+            </lhs>
+            <rhs>
+                <attribute>B</attribute>
+                <attribute>C</attribute>
+            </rhs>
+        </fd>
+
+        <fd>
+            <lhs>
+                <attribute>C</attribute>
+                <attribute>D</attribute>
+            </lhs>
+            <rhs>
+                <attribute>E</attribute>
+            </rhs>
+        </fd>
+
+
+        <fd>
+            <lhs>
+                <attribute>B</attribute>
+            </lhs>
+            <rhs>
+                <attribute>D</attribute>
+            </rhs>
+        </fd>
+
+        <fd>
+            <lhs>
+                <attribute>E</attribute>
+            </lhs>
+            <rhs>
+                <attribute>A</attribute>
+            </rhs>
+        </fd>
+
+        </dependencies>
+    </relation>
+	
+	
+	
+</schema>
