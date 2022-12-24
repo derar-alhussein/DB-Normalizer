@@ -1,5 +1,4 @@
 # DB Normalizer
-#### DMKM - Advanced Databases Project
 
 DB Normalizer is a relational database normalizer tool that allow database designers to perform automatic database schemas normalization quickly and accurately.
 
